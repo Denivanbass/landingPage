@@ -175,7 +175,7 @@ export default function LandingPage() {
           </p>
 
           <a
-            href="mailto:denivanbass@gmail.com"
+            href="https://wa.me/5511948188976?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site%20ou%20sistema."
             className="mt-8 inline-flex min-h-14 items-center justify-center rounded-lg bg-orange-500 px-8 py-4 font-semibold text-black transition hover:bg-orange-400"
           >
             Entrar em contato

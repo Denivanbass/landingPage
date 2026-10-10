@@ -78,7 +78,7 @@ export function Header() {
                     </a>
                 </nav>
 
-                {/* Botão de orçamentoo */}
+                {/* Botão de orçamento */}
                 <a
                     href="#contato"
                     className="group relative inline-flex shrink-0 items-center justify-center gap-2 overflow-hidden rounded-lg bg-amber-400 px-4 py-2.5 text-sm font-bold text-black transition-all duration-300 hover:-translate-y-0.5 hover:bg-amber-300 hover:shadow-lg hover:shadow-amber-500/20 sm:px-5"
