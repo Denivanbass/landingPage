@@ -188,7 +188,7 @@ export default function LandingPage() {
 
       {/* Botão flutuante do WhatsApp */}
       <a
-        href="https://wa.me/11948188976?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site%20ou%20sistema."
+        href="https://wa.me/5511948188976?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site%20ou%20sistema."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Entre em contato pelo WhatsApp"
