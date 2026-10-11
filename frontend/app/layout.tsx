@@ -5,7 +5,7 @@ import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 
 export const metadata: Metadata = {
-  title: "DevSite | Sites, Lojas Virtuais e Sistemas Web",
+  title: "Millanes | Sites, Sistemas e Lojas Virtuais",
   description:
     "Desenvolvimento de sites profissionais, lojas virtuais e sistemas web personalizados para pequenos negócios e profissionais autônomos.",
 };
