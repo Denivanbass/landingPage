@@ -181,7 +181,7 @@ export default function Home() {
                 <div className="relative h-36 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
                   <Image
                     src={Codigo}
-                    alt="Planejamento e UI/UX"
+                    alt="Código Limpo e Otimizado"
                     loading="lazy"
                     className="h-full w-full object-cover"
                   />
@@ -198,7 +198,7 @@ export default function Home() {
                 <div className="relative h-36 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
                 <Image
                     src={Vendas}
-                    alt="Planejamento e UI/UX"
+                    alt="Foco em Vendas"
                     loading="lazy"
                     className="h-full w-full object-cover"
                   />
@@ -209,7 +209,7 @@ export default function Home() {
                 <div className="relative h-48 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
                 <Image
                     src={Suporte}
-                    alt="Planejamento e UI/UX"
+                    alt="Suporte Dedicado"
                     loading="lazy"
                     className="h-full w-full object-cover"
                   />
