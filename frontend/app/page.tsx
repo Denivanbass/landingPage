@@ -48,7 +48,7 @@ export default function Home() {
 
           <h1 className="mx-auto mt-8 max-w-4xl text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Transformamos suas idéias em{' '}
-            <span className="text-primary">soluções digitais</span> que geram resultados.
+            <span className="text-primary">soluções digitais</span> que geram resultados
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-gray-300 sm:text-lg sm:leading-8">
@@ -93,7 +93,7 @@ export default function Home() {
             </span>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Tecnologia para tirar suas idéias do papel.
+              Tecnologia para tirar suas idéias do papel
             </h2>
 
             <p className="mt-5 leading-7 text-gray-400">
@@ -145,7 +145,7 @@ export default function Home() {
                 Sobre nós
               </span>
               <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-                Seu projeto começa com uma idéia.
+                Seu projeto começa com uma idéia
               </h2>
               <p className="mt-5 leading-7 text-gray-400">
                 Entendemos sua necessidade e desenvolvemos uma solução digital pensada para o seu projeto, com foco em funcionalidade, experiência do usuário e crescimento do negócio.
