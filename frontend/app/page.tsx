@@ -52,7 +52,7 @@ export default function Home() {
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-gray-300 sm:text-lg sm:leading-8">
-            Criamos sites profissionais, landing pages e sistemas personalizados para ajudar seu negócio a crescer no digital.
+            Criamos sites institucionais, landing pages, sistemas sob medida e lojas virtuais para ajudar seu negócio a crescer no digital.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
