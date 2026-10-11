@@ -1,32 +1,35 @@
-
 'use client';
+
+import Image from "next/image";
+import Planejamento from "@/public/images/planejamento.jpg";
+import Codigo from "@/public/images/codigo.jpg";
+import Vendas from "@/public/images/vendas.jpg";
+import Suporte from "@/public/images/suporte.jpg";
 
 const servicos = [
   {
     numero: '01',
-    titulo: 'Sites profissionais',
+    titulo: 'Sites e Landing pages',
     descricao:
       'Sites modernos, responsivos e personalizados para fortalecer a presença digital da sua empresa.',
   },
   {
     numero: '02',
-    titulo: 'Landing pages',
+    titulo: 'Lojas Virtuais',
     descricao:
-      'Páginas estratégicas para apresentar sua oferta, captar contatos e gerar oportunidades de negócio.',
+      'Lojas virtuais completas, com catálogo de produtos, carrinho de compras e integração de pagamentos para vender seus produtos pela internet.',
   },
   {
     numero: '03',
-    titulo: 'Sistemas personalizados',
+    titulo: 'Sistemas sob medida',
     descricao:
       'Soluções digitais desenvolvidas para automatizar processos e atender às necessidades do seu negócio.',
   },
 ];
 
-export default function LandingPage() {
+export default function Home() {
   return (
     <main className="min-h-screen bg-black text-white">
-
-
       {/* Hero */}
       <section
         id="inicio"
@@ -34,38 +37,31 @@ export default function LandingPage() {
       >
         {/* Camadas de escurecimento */}
         <div className="absolute inset-0 -z-10 bg-black/55" />
-
         <div className="absolute inset-0 -z-10 bg-gradient-to-b from-black/70 via-black/35 to-black" />
 
         {/* Conteúdo principal */}
         <div className="mx-auto w-full max-w-7xl px-6 py-32 text-center sm:py-28">
           <span className="inline-flex items-center gap-2 rounded-full border border-white/20 bg-black/40 px-4 py-2 text-sm text-gray-200 backdrop-blur-md">
-            <span className="h-2 w-2  rounded-full bg-orange-500" />
+            <span className="h-2 w-2 rounded-full bg-primary" />
             Desenvolvimento de sites e sistemas
           </span>
 
           <h1 className="mx-auto mt-8 max-w-4xl text-4xl font-extrabold leading-[1.12] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Transformamos suas idéias em{' '}
-            <span className="text-orange-500">
-              soluções digitais
-            </span>{' '}
-            que geram resultados.
+            <span className="text-primary">soluções digitais</span> que geram resultados.
           </h1>
 
           <p className="mx-auto mt-7 max-w-2xl text-base leading-7 text-gray-300 sm:text-lg sm:leading-8">
-            Criamos sites profissionais, landing pages e sistemas
-            personalizados para ajudar seu negócio a crescer no digital.
+            Criamos sites profissionais, landing pages e sistemas personalizados para ajudar seu negócio a crescer no digital.
           </p>
 
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a
               href="#contato"
-              className="inline-flex min-h-14 w-full items-center justify-center rounded-lg bg-orange-500 px-8 py-4 font-semibold text-black transition duration-300 hover:-translate-y-1 hover:bg-orange-400 sm:w-auto"
+              className="inline-flex min-h-14 w-full items-center justify-center rounded-lg bg-primary px-8 py-4 font-semibold text-black transition duration-300 hover:-translate-y-1 hover:bg-primary-hover sm:w-auto"
             >
               Solicitar orçamento
-              <span className="ml-2" aria-hidden="true">
-                →
-              </span>
+              <span className="ml-2" aria-hidden="true">→</span>
             </a>
 
             <a
@@ -77,12 +73,12 @@ export default function LandingPage() {
           </div>
 
           <p className="mt-6 text-sm text-gray-400">
-            Soluções sob medida para transformar ideias em projetos reais.
+            Soluções sob medida para transformar idéias em projetos reais.
           </p>
         </div>
 
         {/* Indicador visual inferior */}
-        <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-orange-500/60 to-transparent" />
+        <div className="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-primary/60 to-transparent" />
       </section>
 
       {/* Serviços */}
@@ -90,19 +86,18 @@ export default function LandingPage() {
         id="servicos"
         className="relative bg-[#080808] px-6 py-20 sm:py-28"
       >
-        <div className="mx-auto max-w-7xl">
+        <div className="mx-auto max-w-6xl">
           <div className="mx-auto max-w-2xl text-center">
-            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
+            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
               O que fazemos
             </span>
 
             <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
-              Tecnologia para tirar suas ideias do papel.
+              Tecnologia para tirar suas idéias do papel.
             </h2>
 
             <p className="mt-5 leading-7 text-gray-400">
-              Do primeiro site a um sistema personalizado, desenvolvemos
-              soluções alinhadas aos objetivos do seu negócio.
+              Do primeiro site a um sistema personalizado, desenvolvemos soluções alinhadas aos objetivos do seu negócio.
             </p>
           </div>
 
@@ -110,9 +105,9 @@ export default function LandingPage() {
             {servicos.map((servico) => (
               <article
                 key={servico.numero}
-                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:-translate-y-1 hover:border-orange-500/50 hover:bg-white/[0.05]"
+                className="group rounded-2xl border border-white/10 bg-white/[0.03] p-7 transition duration-300 hover:-translate-y-1 hover:border-primary/50 hover:bg-white/5"
               >
-                <span className="text-sm font-semibold text-orange-500">
+                <span className="text-lg font-semibold text-primary">
                   {servico.numero}
                 </span>
 
@@ -126,7 +121,7 @@ export default function LandingPage() {
 
                 <a
                   href="#contato"
-                  className="mt-7 inline-flex items-center gap-2 font-medium text-orange-500 transition group-hover:text-orange-400"
+                  className="mt-7 inline-flex items-center gap-2 font-medium text-primary transition group-hover:text-primary-hover"
                 >
                   Vamos conversar
                   <span aria-hidden="true">→</span>
@@ -137,21 +132,94 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Sobre */}
+      {/* Sobre (Atualizado com grid de imagens/cards visuais) */}
       <section
         id="sobre"
-        className="border-t border-white/10 bg-black px-6 py-20"
+        className="border-t border-white/10 bg-black px-6 py-20 sm:py-28"
       >
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold sm:text-4xl">
-            Seu projeto começa com uma ideia.
-          </h2>
+        <div className="mx-auto max-w-6xl">
+          <div className="grid items-center gap-12 lg:grid-cols-2">
+            {/* Texto explicativo */}
+            <div>
+              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
+                Sobre nós
+              </span>
+              <h2 className="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">
+                Seu projeto começa com uma idéia.
+              </h2>
+              <p className="mt-5 leading-7 text-gray-400">
+                Entendemos sua necessidade e desenvolvemos uma solução digital pensada para o seu projeto, com foco em funcionalidade, experiência do usuário e crescimento do negócio.
+              </p>
+              <div className="mt-8 flex items-center gap-6">
+                <div className="border-l-2 border-primary pl-4">
+                  <p className="text-2xl font-bold text-white">+ 450 projetos</p>
+                  <p className="text-sm text-gray-400">Entregues com foco em performance</p>
+                </div>
+                <div className="border-l-2 border-primary pl-4">
+                  <p className="text-2xl font-bold text-white">100%</p>
+                  <p className="text-sm text-gray-400">Personalizado e responsivo</p>
+                </div>
+              </div>
+            </div>
 
-          <p className="mt-5 leading-7 text-gray-400">
-            Entendemos sua necessidade e desenvolvemos uma solução digital
-            pensada para o seu projeto, com foco em funcionalidade,
-            experiência do usuário e crescimento do negócio.
-          </p>
+            {/* Grid de Imagens / Elementos Visuais */}
+            <div className="grid grid-cols-2 gap-4">
+              <div className="space-y-4 ">  
+
+                <div className="relative h-48 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
+                  <Image
+                    src={Planejamento}
+                    alt="Planejamento e UI/UX"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/20 to-transparent p-4 flex items-end">
+                    <span className="text-sm font-medium text-gray-200">Planejamento e UI/UX</span>
+                  </div>
+                </div>
+                <div className="relative h-36 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
+                  <Image
+                    src={Codigo}
+                    alt="Planejamento e UI/UX"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+
+                  <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/20 to-transparent p-4 flex items-end">
+                    <span className="text-sm font-medium text-gray-200">Código Limpo</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div className="mt-8 space-y-4">
+                <div className="relative h-36 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
+                <Image
+                    src={Vendas}
+                    alt="Planejamento e UI/UX"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/20 to-transparent p-4 flex items-end">
+                    <span className="text-sm font-medium text-gray-200">Foco em Vendas</span>
+                  </div>
+                </div>
+                <div className="relative h-48 overflow-hidden rounded-2xl border border-white/10 bg-white/5 transition duration-300 hover:border-primary/50">
+                <Image
+                    src={Suporte}
+                    alt="Planejamento e UI/UX"
+                    loading="lazy"
+                    className="h-full w-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-tr from-black/80 via-black/20 to-transparent p-4 flex items-end">
+                    <span className="text-sm font-medium text-gray-200">Suporte Dedicado</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -161,30 +229,26 @@ export default function LandingPage() {
         className="border-t border-white/10 bg-[#0b0b0b] px-6 py-20"
       >
         <div className="mx-auto max-w-3xl text-center">
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-500">
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-primary">
             Vamos conversar
           </span>
 
           <h2 className="mt-4 text-3xl font-bold sm:text-4xl">
-            Vamos transformar sua ideia em realidade?
+            Vamos transformar sua idéia em realidade?
           </h2>
 
           <p className="mt-5 leading-7 text-gray-400">
-            Conte o que você precisa e vamos conversar sobre a melhor
-            solução para o seu negócio.
+            Conte o que você precisa e vamos conversar sobre a melhor solução para o seu negócio.
           </p>
 
           <a
             href="https://wa.me/5511948188976?text=Ol%C3%A1%21%20Gostaria%20de%20um%20or%C3%A7amento%20para%20um%20site%20ou%20sistema."
-            className="mt-8 inline-flex min-h-14 items-center justify-center rounded-lg bg-orange-500 px-8 py-4 font-semibold text-black transition hover:bg-orange-400"
+            className="mt-8 inline-flex min-h-14 items-center justify-center rounded-lg bg-primary px-8 py-4 font-semibold text-black transition hover:bg-primary-hover"
           >
             Entrar em contato
           </a>
         </div>
       </section>
-
-
-
 
       {/* Botão flutuante do WhatsApp */}
       <a
@@ -193,7 +257,7 @@ export default function LandingPage() {
         rel="noopener noreferrer"
         aria-label="Entre em contato pelo WhatsApp"
         title="Fale conosco pelo WhatsApp"
-        className="fixed bottom-20 right-6 md:right-10 lg:right-16  z-50 flex  w-16 h-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition duration-300 hover:scale-110 hover:bg-[#20BA5A] focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
+        className="fixed bottom-20 right-6 md:right-10 lg:right-16 z-50 flex w-16 h-16 items-center justify-center rounded-full bg-[#25D366] text-white shadow-lg transition duration-300 hover:scale-110 hover:bg-[#20BA5A] focus:outline-none focus:ring-4 focus:ring-[#25D366]/40"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

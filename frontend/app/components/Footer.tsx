@@ -12,9 +12,9 @@ export function Footer() {
 
   return (
     <footer className="border-t border-white/10 bg-black px-6 py-6">
-      <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 text-sm text-gray-500 sm:flex-row">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-sm text-gray-500 sm:flex-row">
         <p>
-          © {year ?? 2026} DevSite. Todos os direitos reservados.
+          © {year ?? 2026} Millanes. Todos os direitos reservados.
         </p>
 
         <a
